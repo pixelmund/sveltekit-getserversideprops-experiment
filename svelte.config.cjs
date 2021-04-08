@@ -63,7 +63,7 @@ const loadPreprocess = () => {
 						cd = `
 						<script context="module">
 							export async function load({ fetch }) {
-								const response = await fetch('/api', {
+								const response = await fetch('${routesName}', {
 									credentials: 'include',
 									headers: { 'content-type': 'application/json' }
 								});
